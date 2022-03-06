@@ -23,7 +23,7 @@
 
         <div class="openbtn"><span></span><span></span><span></span></div>
 
-        <nav class="nav-sp">
+        <nav class="hamburger-nav">
             <div>
                 <h2>YURI顔タイプ</h2>
                 <a href="index.html">ホーム</a>
@@ -102,26 +102,35 @@
         </section>
         <section id="reservation">
             <p>似合うがわかることで、<br>おしゃれが楽しめますよ♪</p>
-            <p>まずは、<span class="red">無料カウンセリング</span>へ！！！</p>
+            <p>まずは、<span class="red">無料カウンセリング</span>へ</p>
             <p>↓↓↓</p>
-            <a href="https://kaotypeyuri.base.shop" id="reserve">予約する</a>
+            <a href="https://kaotypeyuri.base.shop"
+                class="btn btn-red">予約する</a>
         </section>
     </main>
     <footer>
-        <h2>YURI顔タイプ</h2>
         <nav class="nav-pc">
+            <h2>YURI顔タイプ</h2>
             <a href="index.html">ホーム</a>
             <a href="https://www.instagram.com/kaotype__yuri/">私について</a>
             <a href="https://kaotypeyuri.base.shop/">メニュー</a>
             <a href="https://thebase.in/inquiry/kaotypeyuri-base-shop">お問い合わせ</a>
-            <a href="https://kaotypeyuri.base.shop">予約する</a>
-        </nav>
+            <a href="https://kaotypeyuri.base.shop">予約する</a>     
+        </nav>    
+        <nav class="nav-sp">
+            <h2>YURI顔タイプ</h2>
+            <a href="index.html">ホーム</a>
+            <a href="https://www.instagram.com/kaotype__yuri/">私について</a>
+            <a href="https://kaotypeyuri.base.shop/">メニュー</a>
+            <a href="https://thebase.in/inquiry/kaotypeyuri-base-shop">お問い合わせ</a>
+            <a href="https://kaotypeyuri.base.shop" id="reserve">予約する</a>   
+        </nav>     
         <a href="https://www.instagram.com/kaotype__yuri/">
-            <i class="fa-brands fa-instagram fa-2x"></i>
-        </a>
-        <a href="https://lin.ee/Afi8kup">
-            <i class="fa-brands fa-line fa-2x"></i>
-        </a>    
+                <i class="fa-brands fa-instagram fa-2x"></i>
+            </a>
+            <a href="https://lin.ee/Afi8kup">
+                <i class="fa-brands fa-line fa-2x"></i>
+            </a>          
         <span id="copyright">&copy;2022 顔タイプYURI All Rights Reserved.</span>
     </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
@@ -129,7 +138,7 @@
         'use strict';
         $(".openbtn").click(function() {
             $(this).toggleClass('active');
-            $(".nav-sp").toggleClass("show");
+            $(".hamburger-nav").toggleClass("show");
         });
             
         </script>    

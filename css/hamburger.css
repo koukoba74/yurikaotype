@@ -51,7 +51,7 @@
     transform: translateY(-6px) rotate(45deg);
     width: 30%;
 }
-.nav-sp.show {
+.hamburger-nav.show {
     transform: translate3d(-270px, 0 ,0);
 }
 

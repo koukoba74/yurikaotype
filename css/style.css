@@ -36,7 +36,7 @@ i {
         min-width: 960px;
         margin: 0 auto;
     }
-    .openbtn, .nav-sp {
+    .openbtn, .hamburger-nav, .nav-sp{
         display: none;
     }
     header {
@@ -184,7 +184,9 @@ i {
     }
     #reservation {
         margin: 0 auto;
+        padding: 20px;
         width: 100%;
+        height: 300px;
         background-color: #FFDEEE;
         text-align: center;
     }
@@ -194,27 +196,41 @@ i {
         text-align: center;
         margin: 0;
     }
-    #reservation a {
+    .btn {
+        font-size: 1.8rem;
+        font-weight: bold;
+        line-height: 1.5;
+        position: relative;
         display: inline-block;
-        width: 200px;
-        height: 100px;
+        padding: 2rem 6rem;
+        cursor: pointer;
+        transition: all 0.3s;
+        text-align: center;
+        vertical-align: middle;
+        letter-spacing: 0.1em;
+        background-color: #BF211E;
+        border-radius: 100vh;
+    }
+    a.btn-red {
         color: #fff;
         background-color: #BF211E;
-        text-align: center;
-        margin: 0 auto 20px;
-        padding: 30px;
-        font-size: 2.8rem;
+        border-bottom: 5px solid #8b0000;
+    }
+    a.btn-red:hover {
+        margin-top: 3px;
+        color: #fff;
+        background-color: #BF211E;
+        border-bottom: 2px solid #8b0000;
     }
     footer {
         background-color: #DCC7BE;
-        padding: 20px;
     }
 
-    footer > h2 {
+    footer > .nav-pc > h2 {
         font-size: 2.4rem;
         font-weight: bold;
         text-align: center;
-        margin: 0 auto;
+        margin: 20px auto;
     }
     footer > .nav-pc {
         font-size: 1.6rem;
@@ -254,7 +270,7 @@ i {
         width: 32px;
         height: 32px;
     }
-    .nav-sp {
+    .hamburger-nav {
         width: 270px;
         height: 100%;
         position: fixed;
@@ -263,16 +279,16 @@ i {
         margin-top: 40px;
         background-color: #DCC7BE;
     }
-    .nav-sp > div {
+    .hamburger-nav > div {
         transition: transform 0.3s;
     }
-    .nav-sp > div > h2 {
+    .hamburger-nav > div > h2 {
         margin: 0 auto;
         text-align: center;
         background-color: #DCC7BE;
     }
     
-    .nav-sp > div > a {
+    .hamburger-nav > div > a {
         display: block;
         font-size: 1.2rem;
         background-image: url("images/arrow.png");
@@ -285,7 +301,6 @@ i {
     #main-visual {
         margin: 0 auto;
         width: 100%;
-        height: 650px;
         background-color: #FFDEEE;
     }
     #main-flex > div {
@@ -342,7 +357,6 @@ i {
     #solve {
         margin: 0 auto;
         width: 100%;
-        height: 650px;
         background-color: #FFDEEE;
     }
     #solve-flex > div {
@@ -355,7 +369,7 @@ i {
         text-align: center;
         width: 100%;
         margin: 0;
-        padding: 50px;
+        padding: 50px 40px 40px;
     }
     #merit {
         margin: 0 auto;
@@ -366,16 +380,20 @@ i {
         width: 100%;
     }
     #merit-flex > div > p {
-        font-size: 3.6rem;
+        font-size: 3rem;
         font-weight: bold;
+        text-align: center;
         margin: 0;
-    }   
+    }
+    #merit-flex > div > ul {
+        padding-left: 20px;
+    }
     #merit-flex > div > ul > li {
         font-size: 2.4rem;
         font-weight: bold;
     }
     .red {
-        font-size: 3.6rem;
+        font-size: 2.4rem;
         font-weight: bold;
         color: #BF211E;
     }
@@ -384,7 +402,9 @@ i {
     }
     #reservation {
         margin: 0 auto;
+        padding: 30px 20px;
         width: 100%;
+        height: 270px;
         background-color: #FFDEEE;
         text-align: center;
     }
@@ -394,19 +414,36 @@ i {
         text-align: center;
         margin: 0;
     }
-    #reservation a {
+    
+    .btn {
+        font-size: 1.6rem;
+        font-weight: bold;
+        line-height: 1.5;
+        position: relative;
         display: inline-block;
-        width: 180px;
-        height: 90px;
+        padding: 2rem 6rem;
+        cursor: pointer;
+        transition: all 0.3s;
+        text-align: center;
+        vertical-align: middle;
+        letter-spacing: 0.1em;
+        background-color: #BF211E;
+        border-radius: 100vh;
+    }
+    a.btn-red {
         color: #fff;
         background-color: #BF211E;
-        text-align: center;
-        margin: 0 auto 20px;
-        padding: 30px;
-        font-size: 2rem;
+        border-bottom: 5px solid #8b0000;
+    }
+    a.btn-red:hover {
+        margin-top: 3px;
+        color: #fff;
+        background-color: #BF211E;
+        border-bottom: 2px solid #8b0000;
     }
     footer {
         background-color: #DCC7BE;
+        padding: 20px 10px;
     }
 
     footer > h2 {
@@ -415,9 +452,17 @@ i {
         text-align: center;
         margin: 0 auto;
     }
-    footer > .nav-pc {
+    footer > .nav-sp {
         font-size: 1.6rem;
+        display: block;
+    }
+    footer > .nav-sp > h2 {
+        margin: 0;
         text-align: center;
+    }
+    footer > .nav-sp > a {
+        display: block;
+        margin: 20px;
     }
     #copyright {
         text-align: right;

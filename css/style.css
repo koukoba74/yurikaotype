@@ -1,0 +1,427 @@
+/* PC、スマホ共通 */
+@charset "UTF-8";
+
+/*10px相当にする*/
+html {
+    font-size: 62.5%;
+}
+body {
+    color: #463730;
+    font-size: 1.2rem;
+    font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+a:link, a:visited, a:active {
+    color: #463730;
+    text-decoration: none;
+}
+a:hover {
+    color: #463730;
+    text-decoration: underline;
+}
+ul{
+    list-style-type: none;
+}
+i {
+    margin: 10px;
+}
+/* PC用のスタイル */
+@media screen and (min-width: 768px) {
+    body {
+        max-width: 1080px;
+        min-width: 960px;
+        margin: 0 auto;
+    }
+    .openbtn, .nav-sp {
+        display: none;
+    }
+    header {
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 auto;
+        background-color: #DCC7BE;
+    }
+    header > h2 {
+        font-size: 3.6rem;
+        font-weight: bold;
+        margin: 0 20px;
+    }
+    .nav-pc {
+        text-align: right;
+        padding-top: 15px;
+        font-size: 1.6rem;
+        margin: 0 20px;
+    }
+    .nav-pc a {
+        margin-left: 20px;
+    }
+    .nav-pc #reserve {
+        color: #fff;
+        background-color: #BF211E;
+        padding: 20px;
+    }
+
+    #main-visual {
+        margin: 0 auto;
+        width: 100%;
+        background-color: #FFDEEE;
+    }
+
+    #main-flex {
+        width: 100%;
+        display: flex;
+    }
+
+    #main-flex > div {
+        width: 50%;
+        margin: 20px;
+    }
+
+    #main-flex > div > p {
+        font-size: 3.6rem;
+        font-weight: bold;
+        text-align: center;
+    }
+    .h1-bold {
+        font-size: 4.8rem;
+        color: #c18c5d;
+    }
+    #trouble {
+        margin: 0 auto;
+        width: 100%;
+        background-color: #adfcf9;
+    }
+    #trouble > p {
+        font-size: 2.8rem;
+        font-weight: bold;
+        margin: 0 auto;
+        padding-top: 20px;
+        text-align: center;
+    }
+    #trouble-flex {
+        width: 100%;
+        display: flex;
+    }
+    #trouble-flex > div {
+        width: 50%;
+        margin: 20px;
+    }
+    #trouble-flex > div > ul > li {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .h2-bold {
+        font-size: 3.6rem;
+        color: #c18c5d;
+    }
+
+
+    #solve {
+        margin: 0 auto;
+        width: 100%;
+        background-color: #FFDEEE;
+    }
+
+    #solve-flex {
+        width: 100%;
+        display: flex;
+    }
+
+    #solve-flex > div {
+        width: 50%;
+        margin: 20px;
+    }
+
+    #solve-flex > div > p {
+        font-size: 3.6rem;
+        font-weight: bold;
+        text-align: center;
+    }
+    #trouble-flex > div > .sub-img {
+        opacity: 0.5;
+    }
+    #merit {
+        margin: 0 auto;
+        width: 100%;
+        background-color: #FFDEEE;
+    }
+
+    #merit-flex {
+        width: 100%;
+        display: flex;
+    }
+
+    #merit-flex > div {
+        width: 50%;
+        margin: 20px;
+    }
+    #merit-flex > div > p {
+        font-size: 3rem;
+        font-weight: bold;
+        margin: 0;
+    }
+    #merit-flex > div > ul {
+        padding: 0;
+    }
+    #merit-flex > div > ul > li {
+        font-size: 2.4rem;
+        font-weight: bold;
+    }
+    .red {
+        font-size: 3.6rem;
+        font-weight: bold;
+        color: #BF211E;
+    }
+    .brown {
+        color: #c18c5d;
+    }
+    #reservation {
+        margin: 0 auto;
+        width: 100%;
+        background-color: #FFDEEE;
+        text-align: center;
+    }
+    #reservation p {
+        font-size: 2.4rem;
+        font-weight: bold;
+        text-align: center;
+        margin: 0;
+    }
+    #reservation a {
+        display: inline-block;
+        width: 200px;
+        height: 100px;
+        color: #fff;
+        background-color: #BF211E;
+        text-align: center;
+        margin: 0 auto 20px;
+        padding: 30px;
+        font-size: 2.8rem;
+    }
+    footer {
+        background-color: #DCC7BE;
+        padding: 20px;
+    }
+
+    footer > h2 {
+        font-size: 2.4rem;
+        font-weight: bold;
+        text-align: center;
+        margin: 0 auto;
+    }
+    footer > .nav-pc {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    #copyright {
+        text-align: right;
+        float: right;
+        margin-top: 20px;
+    }
+}
+
+
+/* スマホ用のスタイル */
+@media screen and (max-width: 767px) {
+    body {
+        min-width: 375px;
+        margin: 0;
+    }
+    .nav-pc {
+        display: none;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 auto;
+        background-color: #DCC7BE;
+    }
+    header > h2 {
+        font-size: 2.4rem;
+        font-weight: bold;
+        margin: 10px 10px 0;
+    }
+    
+    .menu-sp img{
+        width: 32px;
+        height: 32px;
+    }
+    .nav-sp {
+        width: 270px;
+        height: 100%;
+        position: fixed;
+        right: -270px;
+        transition: transform 0.3s;
+        margin-top: 40px;
+        background-color: #DCC7BE;
+    }
+    .nav-sp > div {
+        transition: transform 0.3s;
+    }
+    .nav-sp > div > h2 {
+        margin: 0 auto;
+        text-align: center;
+        background-color: #DCC7BE;
+    }
+    
+    .nav-sp > div > a {
+        display: block;
+        font-size: 1.2rem;
+        background-image: url("images/arrow.png");
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-color: #DCC7BE;
+        padding: 10px;
+    }
+    #main-visual {
+        margin: 0 auto;
+        width: 100%;
+        height: 650px;
+        background-color: #FFDEEE;
+    }
+    #main-flex > div {
+        width: 100%;
+        height: 300px;
+    }
+
+    #main-flex > div > p {
+        font-size: 3.6rem;
+        font-weight: bold;
+        text-align: center;
+        vertical-align: middle;
+        margin: 0;
+        padding: 50px;
+    }
+    #main-img {
+        width: 100%;
+    }
+    .h1-bold {
+        font-size: 4.8rem;
+        color: #c18c5d;
+    }
+    #trouble {
+        margin: 0 auto;
+        width: 100%;
+        background-color: #adfcf9;
+    }
+    #trouble > p {
+        font-size: 2.8rem;
+        font-weight: bold;
+        margin: 0 auto;
+        padding-top: 20px;
+        text-align: center;
+    }
+    #trouble-flex > div {
+        width: 100%;
+    }
+    #trouble-flex > div > ul > li {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    #trouble-flex > div > .sub-img {
+        opacity: 0.5;
+    }
+    .sub-img {
+        width: 100%;
+    }
+    .h2-bold {
+        font-size: 3.6rem;
+        color: #c18c5d;
+    }
+    #solve {
+        margin: 0 auto;
+        width: 100%;
+        height: 650px;
+        background-color: #FFDEEE;
+    }
+    #solve-flex > div {
+        width: 100%;
+        height: 300px;
+    }
+    #solve-flex > div > p {
+        font-size: 3.6rem;
+        font-weight: bold;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: 50px;
+    }
+    #merit {
+        margin: 0 auto;
+        width: 100%;
+        background-color: #FFDEEE;
+    }
+    #merit-flex > div {
+        width: 100%;
+    }
+    #merit-flex > div > p {
+        font-size: 3.6rem;
+        font-weight: bold;
+        margin: 0;
+    }   
+    #merit-flex > div > ul > li {
+        font-size: 2.4rem;
+        font-weight: bold;
+    }
+    .red {
+        font-size: 3.6rem;
+        font-weight: bold;
+        color: #BF211E;
+    }
+    .brown {
+        color: #c18c5d;
+    }
+    #reservation {
+        margin: 0 auto;
+        width: 100%;
+        background-color: #FFDEEE;
+        text-align: center;
+    }
+    #reservation p {
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        margin: 0;
+    }
+    #reservation a {
+        display: inline-block;
+        width: 180px;
+        height: 90px;
+        color: #fff;
+        background-color: #BF211E;
+        text-align: center;
+        margin: 0 auto 20px;
+        padding: 30px;
+        font-size: 2rem;
+    }
+    footer {
+        background-color: #DCC7BE;
+    }
+
+    footer > h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        margin: 0 auto;
+    }
+    footer > .nav-pc {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    #copyright {
+        text-align: right;
+        float: right;
+        margin-top: 20px;
+    }
+}
